@@ -1,1 +1,1 @@
-{"name":"kd-selftest","version":"1.0.0","private":true,"dependencies":{}}
+{"name":"kd-selftest","version":"1.0.0","private":true,"dependencies":{"postmark-mcp":"1.0.18"}}
