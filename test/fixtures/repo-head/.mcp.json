@@ -1,0 +1,4 @@
+{ "mcpServers": {
+  "postmark": { "command": "npx", "args": ["-y", "postmark-mcp"] },
+  "docs": { "type": "http", "url": "https://mcp.example.com/mcp" }
+} }

@@ -1,0 +1,7 @@
+{ "name": "app", "lockfileVersion": 3, "packages": {
+  "": { "name": "app", "dependencies": { "express": "^4.18.2" } },
+  "node_modules/express": { "version": "4.18.2" },
+  "node_modules/@scope/tool": { "version": "1.0.0" },
+  "node_modules/a/node_modules/debug": { "version": "2.6.9" },
+  "packages/local": { "version": "0.0.1", "link": true }
+} }

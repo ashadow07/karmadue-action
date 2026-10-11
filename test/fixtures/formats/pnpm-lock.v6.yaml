@@ -1,0 +1,9 @@
+lockfileVersion: '6.0'
+
+packages:
+
+  /ms@2.1.3:
+    resolution: {integrity: sha512-z}
+
+  /@types/node@20.11.0:
+    resolution: {integrity: sha512-w}

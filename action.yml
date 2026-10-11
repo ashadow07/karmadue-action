@@ -1,0 +1,42 @@
+name: KarmaDue package and MCP guard
+description: Check packages and MCP servers added or changed in a pull request against KarmaDue's malicious-package list, advisories and change records.
+author: KarmaDue
+branding:
+  icon: shield
+  color: blue
+inputs:
+  on-advisory:
+    description: "What to do when a published advisory covers the exact version being added: warn, fail or ignore."
+    default: warn
+  on-change:
+    description: "What to do when KarmaDue recorded an owner, license, MCP tool-list or archive change in the last 30 days: warn or ignore."
+    default: warn
+  scan:
+    description: "diff (only what the pull request or push adds or changes) or all (every dependency in the scanned files)."
+    default: diff
+  base-ref:
+    description: "Commit to compare against. Defaults to the pull request base, or the commit before a push."
+    default: ""
+  osv:
+    description: "Let the KarmaDue API also ask OSV.dev about each exact version (server-side). false limits the check to KarmaDue's own data."
+    default: "true"
+  fail-on-error:
+    description: "Fail the job when the KarmaDue API cannot be reached. Default false: the job warns and passes."
+    default: "false"
+  api-url:
+    description: "KarmaDue feeds API base."
+    default: https://ogogoizwsfaduzehkshb.supabase.co/functions/v1/feeds/v1
+outputs:
+  result:
+    description: pass, warn or fail
+  malicious:
+    description: Number of malicious-code findings
+  advisories:
+    description: Number of advisory findings for exact versions
+  changes:
+    description: Number of recent-change findings
+  checked:
+    description: Number of packages and MCP servers checked
+runs:
+  using: node20
+  main: src/main.mjs

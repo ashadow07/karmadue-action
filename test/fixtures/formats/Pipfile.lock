@@ -1,0 +1,1 @@
+{ "_meta": {}, "default": { "six": { "version": "==1.16.0" } }, "develop": { "pytest": { "version": "==8.0.0" } } }

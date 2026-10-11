@@ -1,0 +1,13 @@
+{
+  "name": "karmadue-action",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GitHub Action: check packages and MCP servers added in a pull request against KarmaDue.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test test/",
+    "test:live": "KD_LIVE=1 node --test test/"
+  }
+}

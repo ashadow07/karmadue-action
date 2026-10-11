@@ -1,0 +1,7 @@
+{
+  // VS Code format, with comments and a trailing comma
+  "servers": {
+    "fs": { "type": "stdio", "command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem@2025.8.21", "/tmp"] },
+    "remote": { "type": "http", "url": "https://mcp.example.com/mcp" },
+  },
+}

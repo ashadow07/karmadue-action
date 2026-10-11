@@ -1,0 +1,7 @@
+# comment
+requests==2.19.0
+Flask>=2.0  # range
+uvicorn[standard]==0.30.1 ; python_version >= "3.9"
+-r other.txt
+git+https://github.com/x/y.git
+agent_vx==0.1.0

@@ -1,0 +1,6 @@
+{ "mcpServers": {
+  "py": { "command": "uvx", "args": ["--from", "mcp-server-fetch==2025.4.7", "mcp-server-fetch"] },
+  "win": { "command": "cmd", "args": ["/c", "npx", "-y", "postmark-mcp"] },
+  "docker": { "command": "docker", "args": ["run", "-i", "--rm", "-e", "TOKEN", "ghcr.io/github/github-mcp-server"] },
+  "local": { "command": "node", "args": ["./server.js"] }
+} }
