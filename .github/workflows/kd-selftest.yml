@@ -1,0 +1,12 @@
+name: KarmaDue self-test
+on:
+  pull_request:
+    branches: [kd-selftest-base]
+permissions:
+  contents: read
+jobs:
+  karmadue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ashadow07/karmadue-action@v1
